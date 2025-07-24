@@ -92,7 +92,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">(+228) 70 64 07 58 <br>(+228) 97 04 92 88<br>(+221) 78 894 79 43</a>
+              <a href="tel:+12133522795" class="contact-link">(+228) 97 04 92 88 <br>(+228) 93 87 19 63<br>(+221) 78 894 79 43</a>
             </div>
 
           </li>
@@ -150,7 +150,7 @@
           </li>
         
           <li class="social-item">
-            <a href="https://wa.me/22870640758" class="social-link" target="_blank">
+            <a href="https://wa.me/22897049288" class="social-link" target="_blank">
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
@@ -191,24 +191,26 @@
           </li>
          
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+         <li class="navbar-item">
+  <a class="navbar-link" href="#" data-nav-link>Resume</a>
+</li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+<li class="navbar-item">
+  <a class="navbar-link" href="#" data-nav-link>Portfolio</a>
+</li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Services</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Certificates</button>
-          </li>
+<li class="navbar-item">
+  <a class="navbar-link" href="#" data-nav-link>Services</a>
+</li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
+<li class="navbar-item">
+  <a class="navbar-link" href="#" data-nav-link>Certificates</a>
+</li>
+
+<li class="navbar-item">
+  <a class="navbar-link" href="#" data-nav-link>Contact</a>
+</li>
+
 
         </ul>
 
@@ -695,7 +697,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <a href="portfolio.html" class="portfolio" data-page="portfolio"></a>
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -763,101 +765,294 @@
 
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://www.agtemotors.com/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+           <style>
+  .project-img img {
+    width: 100%;       /* Prend toute la largeur du conteneur */
+    height: 200px;     /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Garantit que l'image couvre toute la zone sans déformation */
+    object-position: center; /* Centre l'image */
+  }
+  
+  .project-img {
+    width: 100%;
+    height: 200px;     /* Même hauteur que l'image */
+    overflow: hidden;  /* Cache les parties de l'image qui dépassent */
+  }
+</style>
 
-                  <img src="./assets/images/logogt.png" alt="finance" loading="lazy" >
-                </figure>
+<li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://www.agtemotors.com/" target="_blank">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/logogt.png" alt="finance" loading="lazy">
+    </figure>
+    <h3 class="project-title">Agt E Motors</h3>
+    <p class="project-category">Web development</p>
+  </a>
+</li>
 
-                <h3 class="project-title">Agt E Motors</h3>
+<li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://sdfpappart.com/" target="_blank">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ssdfpp.jpeg" alt="finance" loading="lazy">
+    </figure>
+    <h3 class="project-title">SDFP-Apparts</h3>
+    <p class="project-category">Web development</p>
+  </a>
+</li>
 
-                <p class="project-category">Web development</p>
-                
+<li class="project-item active" data-filter-item data-category="web development">
+  <a href="https://dsconsultingafrica.com/" target="_blank">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/one.jpeg" alt="finance" loading="lazy">
+    </figure>
+    <h3 class="project-title">DS-consulting</h3>
+    <p class="project-category">Web development</p>
+  </a>
+</li>
 
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://sdfpappart.com/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+<!-- Structure standard pour chaque élément vidéo -->
+<li class="project-item active" data-filter-item data-category="applications">
+  <a href="#" class="video-modal-trigger" data-video-url="./assets/videos/ali.mp4">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-outline"></ion-icon>
+      </div>
+      <video class="video-thumbnail" muted loop playsinline>
+        <source src="./assets/videos/ali.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
+    </figure>
+    <h3 class="project-title">Grocery store</h3>
+    <p class="project-category">Applications</p>
+  </a>
+</li>
+<li class="project-item active" data-filter-item data-category="applications">
+  <a href="#" class="video-modal-trigger" data-video-url="./assets/videos/rendev.mp4">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-outline"></ion-icon>
+      </div>
+      <video class="video-thumbnail" muted loop playsinline>
+        <source src="./assets/videos/rendev.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
+    </figure>
+    <h3 class="project-title">Meeting</h3>
+    <p class="project-category">Applications</p>
+  </a>
+</li>
+<li class="project-item active" data-filter-item data-category="applications">
+  <a href="#" class="video-modal-trigger" data-video-url="./assets/videos/hosto.mp4">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-outline"></ion-icon>
+      </div>
+      <video class="video-thumbnail" muted loop playsinline>
+        <source src="./assets/videos/hosto.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
+    </figure>
+    <h3 class="project-title">Hospital</h3>
+    <p class="project-category">Applications</p>
+  </a>
+</li>
+<li class="project-item active" data-filter-item data-category="applications">
+  <a href="#" class="video-modal-trigger" data-video-url="./assets/videos/clientrdv.mp4">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-outline"></ion-icon>
+      </div>
+      <video class="video-thumbnail" muted loop playsinline>
+        <source src="./assets/videos/clientrdv.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
+    </figure>
+    <h3 class="project-title">Customer management</h3>
+    <p class="project-category">Applications</p>
+  </a>
+</li>
+<li class="project-item active" data-filter-item data-category="applications">
+  <a href="#" class="video-modal-trigger" data-video-url="./assets/videos/qr.mp4">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-outline"></ion-icon>
+      </div>
+      <video class="video-thumbnail" muted loop playsinline>
+        <source src="./assets/videos/qr.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
+    </figure>
+    <h3 class="project-title">Events code qr</h3>
+    <p class="project-category">Applications</p>
+  </a>
+</li>
+<li class="project-item active" data-filter-item data-category="applications">
+  <a href="#" class="video-modal-trigger" data-video-url="./assets/videos/NeoKaffee.mp4">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-outline"></ion-icon>
+      </div>
+      <video class="video-thumbnail" muted loop playsinline>
+        <source src="./assets/videos/NeoKaffee.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
+    </figure>
+    <h3 class="project-title">NeoKaffee</h3>
+    <p class="project-category">Applications</p>
+  </a>
+</li>
+<li class="project-item active" data-filter-item data-category="applications">
+  <a href="#" class="video-modal-trigger" data-video-url="./assets/videos/hotel.mp4">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-outline"></ion-icon>
+      </div>
+      <video class="video-thumbnail" muted loop playsinline>
+        <source src="./assets/videos/hotel.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
+    </figure>
+    <h3 class="project-title">Hotel Management</h3>
+    <p class="project-category">Applications</p>
+  </a>
+</li>
+<li class="project-item active" data-filter-item data-category="applications">
+  <a href="#" class="video-modal-trigger" data-video-url="./assets/videos/ecole.mp4">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-outline"></ion-icon>
+      </div>
+      <video class="video-thumbnail" muted loop playsinline>
+        <source src="./assets/videos/ecole.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
+    </figure>
+    <h3 class="project-title">School Management</h3>
+    <p class="project-category">Applications</p>
+  </a>
+</li>
 
-                  <img src="./assets/images/ssdfpp.jpeg" alt="finance" loading="lazy" >
-                </figure>
-
-                <h3 class="project-title">SDFP-Apparts</h3>
-
-                <p class="project-category">Web development</p>
-                
-
-              </a>
-            </li>
 
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://nahegroup.com/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/nahe.png" alt="finance" loading="lazy" >
-                </figure>
-
-                <h3 class="project-title">Nahe Group</h3>
-
-                <p class="project-category">Web development</p>
-                
-
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://downeaststyle.com/" target="_blank">
-
-                <ul class="social-list">
-
-                  <li class="social-item">
-                    <a href="https://www.facebook.com/profile.php?id=61567848039333&mibextid=ZbWKwL" class="social-link" target="_blank">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-                
-                  <li class="social-item">
-                    <a href="https://www.linkedin.com/in/achiraf-tairou-725ab3234/" class="social-link" target="_blank">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>
-                
-                  <li class="social-item">
-                    <a href="https://www.instagram.com/achdigitalsolutions/" class="social-link" target="_blank">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-                
-                  <li class="social-item">
-                    <a href="https://wa.me/22870640758" class="social-link" target="_blank">
-                      <ion-icon name="logo-whatsapp"></ion-icon>
-                    </a>
-                  </li>
-                
-                  <li class="social-item">
-                    <a href="https://www.tiktok.com/@achdigitalsolutions?_t=8r3tIOrDKBa&_r=1" class="social-link" target="_blank">
-                      <ion-icon name="logo-tiktok"></ion-icon>
-                    </a>
-                  </li>
-                
-                </ul>
-                
-           
-           
 
 
+<!-- Modal pour l'affichage en grand -->
+<div class="video-modal" style="display:none;">
+  <div class="video-modal-container">
+    <button class="video-modal-close">×</button>
+    <video controls autoplay>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<style>
+  /* Styles standards pour les vidéos */
+  .video-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+  
+  .project-img {
+    position: relative;
+  }
+  
+  .project-item-icon-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    padding: 15px;
+    z-index: 1;
+  }
+  
+  .project-item-icon-box ion-icon {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-modal-container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+  }
+  
+  .video-modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .video-modal video {
+    width: 100%;
+  }
+</style>
+
+<script>
+// Script standard pour gérer les vidéos
+document.addEventListener('DOMContentLoaded', function() {
+  // Gestion des déclencheurs de vidéo
+  document.querySelectorAll('.video-modal-trigger').forEach(trigger => {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      const videoUrl = this.getAttribute('data-video-url');
+      const modal = document.querySelector('.video-modal');
+      const video = modal.querySelector('video');
+      
+      video.querySelector('source').src = videoUrl;
+      video.load();
+      video.play();
+      modal.style.display = 'flex';
+    });
+  });
+  
+  // Fermeture de la modal
+  document.querySelector('.video-modal-close').addEventListener('click', function() {
+    const modal = document.querySelector('.video-modal');
+    const video = modal.querySelector('video');
+    
+    video.pause();
+    modal.style.display = 'none';
+  });
+  
+  // Lecture automatique des miniatures
+  document.querySelectorAll('.video-thumbnail').forEach(video => {
+    video.play().catch(e => console.log("La lecture automatique a été bloquée"));
+  });
+});
+</script>
            
 
           </ul>
